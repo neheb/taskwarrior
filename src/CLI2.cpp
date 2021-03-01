@@ -1492,7 +1492,7 @@ void CLI2::findIDs ()
           for (auto& element : elements)
           {
             changes = true;
-            auto hyphen = element.find ("-");
+            auto hyphen = element.find ('-');
             if (hyphen != std::string::npos)
               _id_ranges.push_back (std::pair <std::string, std::string> (element.substr (0, hyphen), element.substr (hyphen + 1)));
             else
@@ -1547,7 +1547,7 @@ void CLI2::findIDs ()
             for (const auto& element : elements)
             {
               changes = true;
-              auto hyphen = element.find ("-");
+              auto hyphen = element.find ('-');
               if (hyphen != std::string::npos)
                 _id_ranges.push_back (std::pair <std::string, std::string> (element.substr (0, hyphen), element.substr (hyphen + 1)));
               else
